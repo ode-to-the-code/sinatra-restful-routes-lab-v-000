@@ -25,7 +25,6 @@ class ApplicationController < Sinatra::Base
   
   get '/recipes/new' do
     erb :new
-    redirect "/recipes/#{@recipe.id}"
   end 
 
   post '/recipes'  do
