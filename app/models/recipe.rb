@@ -3,3 +3,7 @@
 class Recipe < ActiveRecord::Base
   
 end
+
+class Recipe < ActiveRecord::Base 
+  
+end 
