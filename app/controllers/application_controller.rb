@@ -22,6 +22,9 @@ class ApplicationController < Sinatra::Base
   #   # binding.pry
   #   # redirect "/recipes/#{@recipe.id}"
   # end
+  
+  get '/recipes/new' do
+  end 
 
   post '/recipes'  do
     # binding.pry
