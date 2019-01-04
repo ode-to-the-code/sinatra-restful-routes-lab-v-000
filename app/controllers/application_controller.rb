@@ -17,11 +17,11 @@ class ApplicationController < Sinatra::Base
     erb :index 
   end 
 
-  get '/recipes/new' do
-    erb :new
-    # binding.pry
-    # redirect "/recipes/#{@recipe.id}"
-  end
+  # get '/recipes/new' do
+  #   erb :new
+  #   # binding.pry
+  #   # redirect "/recipes/#{@recipe.id}"
+  # end
 
   post '/recipes'  do
     # binding.pry
