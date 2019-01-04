@@ -27,15 +27,15 @@ class ApplicationController < Sinatra::Base
     erb :new
   end 
 
-  post '/recipes'  do
-    # binding.pry
-    x = Recipe.create(name: params[:name], ingredients: params[:ingredients], cook_time: params[:cook_time])
-    # binding.pry
-    # redirect '/recipes'
-    # binding.pry
-    redirect "/recipes/#{x.id}"
+  # post '/recipes'  do
+  #   # binding.pry
+  #   x = Recipe.create(name: params[:name], ingredients: params[:ingredients], cook_time: params[:cook_time])
+  #   # binding.pry
+  #   # redirect '/recipes'
+  #   # binding.pry
+  #   redirect "/recipes/#{x.id}"
 
-  end
+  # end
 
   get '/recipes/:id' do
     @recipe = Recipe.find_by_id(params[:id])
